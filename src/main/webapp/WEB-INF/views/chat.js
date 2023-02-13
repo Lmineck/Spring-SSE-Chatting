@@ -1,5 +1,5 @@
-let username = prompt("아이디를 입력하세요");
-let roomNum = prompt("채팅방 번호를 입력하세요");
+let username = decodeURI(location.href.split("?")[1]);
+let roomNum = location.href.split("?")[2];
 
 document.querySelector("#username").innerHTML = username;
 
